@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif, sans-serif;
+  outline: none;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+/* dark color 202126 */
+
+:root {
+  --main_color: #fff;
+  --blue_color: #0236ff;
+  --card_color: #fff;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  overflow-x: hidden !important;
+  background-color: var(--main_color) !important;
+}
+
+
+/* .navbar .active {
+  color: var(--blue_color) !important;
+  font-weight: 600;
+} */
+
+.navbar {
+  background-color: var(--main_color);
+  z-index: 10;
+  width: 100vw;
+  position: sticky !important;
+  top: 0;
+}
+
+.navbar .my-name {
+  font-weight: 500;
+}
+
+.navbar .logo {
+  font-family: "Merienda", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.navbar .menu-btn {
+  font-size: 1.4rem;
+}
+.nav-link:hover {
+  color: var(--blue_color) !important;
+}
+
+.main-section .rectangles {
+  display: block;
+  text-align: right;
+  width: 100vw;
+  height: calc(100vh - 62px);
+  position: relative;
+}
+
+.main-section .rectangles .rectangle {
+  z-index: -1;
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 32px;
+  background-color: var(--blue_color);
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+
+.main-section .rectangles .rectangle1 {
+  right: -420px;
+  opacity: 0.4;
+  transform: rotate(65deg);
+  -webkit-transform: rotate(65deg);
+  -moz-transform: rotate(65deg);
+  -ms-transform: rotate(65deg);
+  -o-transform: rotate(65deg);
+}
+
+.main-section .rectangles .rectangle2 {
+  right: -420px;
+  opacity: 0.9;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.main-section .rectangles .rectangle3 {
+  width: 260px;
+  height: 260px;
+  left: 27px;
+  bottom: -224px;
+  opacity: 0.7;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.main-section .rectangles .main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.main-section .rectangles .main-text h2 {
+  font-family: "Merienda", sans-serif, sans-serif;
+}
+
+.main-section .rectangles .main-text h2 span {
+  color: var(--blue_color);
+  font-family: "Merienda", sans-serif, sans-serif;
+}
+
+.main-section .rectangles .main-text .contact-me-btn {
+  color: var(--main_color);
+  background-color: var(--blue_color);
+}
+
+.main-section .rectangles .main-text .about-me-btn {
+  color: var(--blue_color);
+  background-color: transparent;
+  border: 1px solid var(--blue_color);
+}
+
+.about-section {
+  max-width: 900px;
+}
+
+.about-section .title {
+  font-family: "Merienda", sans-serif, sans-serif;
+  color: var(--blue_color);
+  position: relative;
+}
+
+.about-section .title::after {
+  content: "About";
+  position: absolute;
+  font-size: 2.4rem;
+  opacity: 0.15;
+  z-index: -1;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.about-section .about-illustration {
+  width: 320px;
+}
+
+.about-section .btn {
+  width: 150px;
+}
+
+.services-section .title {
+  font-family: "Merienda", sans-serif, sans-serif;
+  color: var(--blue_color);
+  position: relative;
+}
+
+.services-section .title::after {
+  content: "Services";
+  position: absolute;
+  font-size: 2.4rem;
+  opacity: 0.15;
+  z-index: -1;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.services-section .cards .card {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: var(--card_color);
+  -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  height: 300px;
+}
+
+.services-section .cards .card-title {
+  color: var(--blue_color);
+}
+
+.services-section .cards img {
+  width: 90px;
+}
+
+.works .title {
+  font-family: "Merienda", sans-serif, sans-serif;
+  color: var(--blue_color);
+  position: relative;
+}
+
+.works .title::after {
+  content: "Projects";
+  position: absolute;
+  font-size: 2.4rem;
+  opacity: 0.15;
+  z-index: -1;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.works .work-images {
+  width: 80vw;
+  max-width: 900px;
+}
+/* 
+.works .work-images .carousel-indicators Button {
+  background-color: #99750d !important;
+} */
+/* 
+.works .work-images .carousel-control-prev span,
+.works .work-images .carousel-control-next span {
+  background-color: #99750d !important;
+  padding: 14px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+} */
+
+.footer {
+  background-color: #202126;
+  padding: 7rem 0;
+}
+
+.footer .form .text {
+  resize: none;
+}
+
+.footer .form .submit-form {
+  background-color: var(--blue_color);
+  width: 200px;
+}
+
+.footer .hire .freelance-websites li img {
+  width: 25px;
+}
+
+.footer .hire .freelance-websites li .arabic-text {
+  font-family: "cairo", sans-serif;
+}
+
+.footer .hire .social-media img {
+  font-size: 25px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.about-page .title {
+  font-family: "Merienda", sans-serif, sans-serif;
+  color: var(--blue_color);
+  position: relative;
+}
+
+.about-page .title::after {
+  content: "About";
+  position: absolute;
+  font-size: 2.4rem;
+  opacity: 0.15;
+  z-index: -1;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+/* this is for the about page */
+.back_button {
+  background-color: #0236ff !important;
+  font-weight: 600;
+  justify-content: space-between;
+  width: 100px;
+}
+#about_me {
+  margin-bottom: 0 !important;
+}
+.info_about_me,
+.question_serction {
+  margin-block: 4rem;
+  margin-inline: auto;
+  max-width: 1100px;
+}
+/* .info_about_me .text_section {
+  padding: 32px;
+} */
+.info_about_me .image_section {
+  padding: 32px;
+}
+
+.info_about_me .text_section .text_section_title {
+  height: 25%;
+}
+.info_about_me .text_section .text_section_description {
+  max-width: 500px;
+  opacity: 75%;
+}
+.info_about_me .text_section .text_section_info {
+  max-width: 500px;
+}
+.info_about_me .text_section .text_section_info .name span,
+.info_about_me .text_section .text_section_info .birth span,
+.info_about_me .text_section .text_section_info .email span,
+.info_about_me .text_section .text_section_info .nationality span {
+  opacity: 0.6;
+  margin-right: 4px;
+}
+
+.info_about_me .text_section .text_section_info .name,
+.info_about_me .text_section .text_section_info .birth,
+.info_about_me .text_section .text_section_info .email,
+.info_about_me .text_section .text_section_info .nationality {
+  padding: 4px;
+}
+
+.image_section img {
+  width: 90%;
+  max-width: 400px;
+}
+.image_question {
+  text-align: center;
+  width: 100%;
+}
+.image_question img {
+  width: 80%;
+  max-width: 400px;
+}
+.question_serction .question_text {
+  width: 100%;
+  padding: 32px;
+}
+.question_serction .question_text .question_description {
+  opacity: 75%;
+  max-width: 500px;
+}
+
+/* this is for admin page */
+.admin-login-form {
+  width: 675px !important;
+}
