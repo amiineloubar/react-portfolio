@@ -32,6 +32,7 @@ body {
   font-weight: 600;
 } */
 
+
 .navbar {
   background-color: var(--main_color);
   z-index: 10;
@@ -249,26 +250,26 @@ body {
   -o-transform: translate(-50%, -50%);
 }
 
-.works .work-images {
-  width: 80vw;
-  max-width: 900px;
+.workExemples, .certificate {
+  padding-inline: 64px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 1.5rem;
 }
-/* 
-.works .work-images .carousel-indicators Button {
-  background-color: #99750d !important;
-} */
-/* 
-.works .work-images .carousel-control-prev span,
-.works .work-images .carousel-control-next span {
-  background-color: #99750d !important;
-  padding: 14px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-} */
 
+.works .work-images {
+  margin-inline: auto;
+  width: 300px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.certificate > div {
+  width: 300px;
+}
 .footer {
   background-color: #202126;
   padding: 7rem 0;
@@ -322,12 +323,7 @@ body {
 }
 
 /* this is for the about page */
-.back_button {
-  background-color: #0236ff !important;
-  font-weight: 600;
-  justify-content: space-between;
-  width: 100px;
-}
+
 #about_me {
   margin-bottom: 0 !important;
 }
@@ -337,9 +333,6 @@ body {
   margin-inline: auto;
   max-width: 1100px;
 }
-/* .info_about_me .text_section {
-  padding: 32px;
-} */
 .info_about_me .image_section {
   padding: 32px;
 }
@@ -349,7 +342,6 @@ body {
 }
 .info_about_me .text_section .text_section_description {
   max-width: 500px;
-  opacity: 75%;
 }
 .info_about_me .text_section .text_section_info {
   max-width: 500px;
@@ -358,7 +350,6 @@ body {
 .info_about_me .text_section .text_section_info .birth span,
 .info_about_me .text_section .text_section_info .email span,
 .info_about_me .text_section .text_section_info .nationality span {
-  opacity: 0.6;
   margin-right: 4px;
 }
 
@@ -386,11 +377,5 @@ body {
   padding: 32px;
 }
 .question_serction .question_text .question_description {
-  opacity: 75%;
   max-width: 500px;
-}
-
-/* this is for admin page */
-.admin-login-form {
-  width: 675px !important;
 }

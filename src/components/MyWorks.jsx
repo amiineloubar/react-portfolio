@@ -1,29 +1,17 @@
 import React from "react";
-import image1 from "../assets/work/img_1.png";
-import image2 from "../assets/work/img_2.png";
-import image3 from "../assets/work/img_3.png";
-import image4 from "../assets/work/img_4.png";
 import Title from "./reusable components/Title";
-import Carousel from "react-bootstrap/Carousel";
+import postsData from '../works_data/data';
+import WorkCard from './reusable components/Work_Card';
 
 function MyWorks() {
   return (
     <div className="works my-5" id="projects">
       <Title title="Projects" />
-      <Carousel className="work-images mx-auto">
-        <Carousel.Item>
-          <img className="d-block w-100" src={image1} alt="First slide" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={image2} alt="web design" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={image3} alt="web design" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={image4} alt="mobile design" />
-        </Carousel.Item>
-      </Carousel>
+      <div className="workExemples mx-auto d-grid">
+        {postsData.map(work => {
+          return <WorkCard key={work.id} src={work.image} title={work.title} description={work.description}/>
+        })}
+      </div>
     </div>
   );
 }

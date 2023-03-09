@@ -1,7 +1,4 @@
 import React from "react";
-// import mobileDesign from "../assets/other/ui_design.jpg";
-// import webDesign from "../assets/other/web_design.jpg";
-// import frontEnd from "../assets/other/front-end.jpg";
 import Title from "./reusable components/Title";
 import ServicesCard from "./reusable components/ServicesCard";
 

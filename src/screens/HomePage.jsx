@@ -1,3 +1,4 @@
+import React from "react";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import MainSection from "../components/MainSection";
@@ -5,9 +6,9 @@ import MyWorks from "../components/MyWorks";
 import NavBar from "../components/NavBar";
 import Services from "../components/Services";
 
-function App() {
+function HomePage() {
   return (
-    <div className="App">
+    <div className="HomePage">
       <NavBar />
       <MainSection />
       <About />
@@ -18,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;
